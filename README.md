@@ -34,13 +34,10 @@ Dataset [5-core](https://en.wikipedia.org/wiki/Degeneracy_(graph_theory)) review
 ## 📂 Struktur Proyek
 
 ```
-├── README.md               # Dokumentasi proyek
-├── notebook.ipynb          # Notebook eksplorasi (jika ada)
-├── src/                    # Kode sumber jika dipisah
-│   └── sentiment_analysis.py
-├── data/                   # Folder untuk menyimpan dataset
-│   └── kindle_reviews.csv
-└── outputs/                # Folder untuk menyimpan output grafik dan laporan
+├── README.md                                            # Dokumentasi proyek
+├── 1304221056_Final_Project_Big_Data_&_AI.ipynb         # Notebook eksplorasi (jika ada)
+├── sentiment_analysis.py                                # Source Code
+│   
 ```
 
 ## 🛠️ Prasyarat
@@ -56,8 +53,8 @@ Dataset [5-core](https://en.wikipedia.org/wiki/Degeneracy_(graph_theory)) review
 1. **Clone repository**
 
    ```bash
-   git clone https://github.com/username/kindle-sentiment-analysis.git
-   cd kindle-sentiment-analysis
+   git clone https://github.com/naufalgholib/sentiment-analysis.git
+   cd sentiment-analysis
    ```
 2. **Atur virtual environment**
 
@@ -74,12 +71,11 @@ Dataset [5-core](https://en.wikipedia.org/wiki/Degeneracy_(graph_theory)) review
 4. **Download dataset**
 
    * Manual download dari Kaggle: [https://www.kaggle.com/datasets/bharadwaj6/kindle-reviews](https://www.kaggle.com/datasets/bharadwaj6/kindle-reviews)
-   * [Letakkan ](https://www.kaggle.com/datasets/bharadwaj6/kindle-reviews)[`kindle_reviews.csv`](https://www.kaggle.com/datasets/bharadwaj6/kindle-reviews)[ di folder ](https://www.kaggle.com/datasets/bharadwaj6/kindle-reviews)[`data/`](https://www.kaggle.com/datasets/bharadwaj6/kindle-reviews)[ atau gun](https://www.kaggle.com/datasets/bharadwaj6/kindle-reviews)akan perintah curl:
+   * [Simpan ](https://www.kaggle.com/datasets/bharadwaj6/kindle-reviews)[`kindle_reviews.csv`](https://www.kaggle.com/datasets/bharadwaj6/kindle-reviews)[ di folder ](https://www.kaggle.com/datasets/bharadwaj6/kindle-reviews)[`yang sama dengan source code`](https://www.kaggle.com/datasets/bharadwaj6/kindle-reviews)[ atau gun](https://www.kaggle.com/datasets/bharadwaj6/kindle-reviews)akan perintah curl:
 
      ```bash
      curl -O -L "https://www.kaggle.com/api/v1/datasets/download/bharadwaj6/kindle-reviews"
      unzip kindle-reviews
-     mv kindle_reviews.csv data/
      ```
 
 ## 🚀 Cara Menjalankan
@@ -87,7 +83,7 @@ Dataset [5-core](https://en.wikipedia.org/wiki/Degeneracy_(graph_theory)) review
 Jalankan skrip Python utama:
 
 ```bash
-python src/sentiment_analysis.py
+python sentiment_analysis.py
 ```
 
 Atau, jika di notebook:
